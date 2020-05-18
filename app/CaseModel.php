@@ -11,12 +11,6 @@ class CaseModel extends Model
 
     protected $fillable = ['age', 'classification', 'brgy_id'];
 
-     /**
-     * Relational table
-     *
-     * @var array
-     */
-
     public function barangay(){
         return $this->belongsTo(Barangay::class, 'brgy_id');
     }
