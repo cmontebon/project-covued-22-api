@@ -11,12 +11,18 @@
                 <li><a href="">Carmen</a></li>
             </ul>
         </div>
+        <GoogleMap/>
     </div>
 </template>
 
 <script>
+import GoogleMap from './GoogleMap'
+
 export default {
   name: 'Home',
+  components: {
+      GoogleMap
+  }
 }
 </script>
 
