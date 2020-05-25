@@ -17,5 +17,9 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
+Route::post('/login', 'API\UserController@login');
+Route::post('/register', 'API\UserController@register');
+
 Route::resource('cases', 'API\CaseController');
 Route::resource('barangays', 'API\BarangayController');
+
